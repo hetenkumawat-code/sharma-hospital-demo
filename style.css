@@ -834,6 +834,36 @@ text-align:center;
 grid-template-columns:1fr 1fr;
 
 }
+@media (max-width: 768px) {
 
+  body {
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .cards,
+  .services-grid,
+  .gallery,
+  .doctor-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
 
 }
