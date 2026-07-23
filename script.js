@@ -1,35 +1,12 @@
+
 // MOBILE MENU
+function toggleMenu(){
 
-const menuBtn = document.querySelector(".mobile-menu");
-const nav = document.querySelector("nav");
+    const nav = document.querySelector("nav");
 
+    nav.classList.toggle("active");
 
-menuBtn.addEventListener("click",()=>{
-
-    if(nav.style.display === "flex"){
-
-        nav.style.display="none";
-
-    }
-    else{
-
-        nav.style.display="flex";
-        nav.style.flexDirection="column";
-        nav.style.position="absolute";
-        nav.style.top="85px";
-        nav.style.right="5%";
-        nav.style.background="white";
-        nav.style.padding="25px";
-        nav.style.borderRadius="20px";
-        nav.style.boxShadow="0 10px 30px #0002";
-
-    }
-
-});
-
-
-
-
+}
 
 // APPOINTMENT POPUP
 
@@ -268,6 +245,5 @@ else{
 header.style.boxShadow="0 5px 25px rgba(0,0,0,.08)";
 
 }
-
 
 });
