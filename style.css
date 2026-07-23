@@ -111,6 +111,8 @@ display:none;
 background:none;
 border:0;
 font-size:25px;
+color:#0878c9;
+cursor:pointer;
 
 }
 
@@ -749,9 +751,14 @@ z-index:999;
 @media(max-width:768px){
 
 
+    nav.active{
+    display:flex !important;
+}
+
 body{
 overflow-x:hidden;
 }
+
 
 
 /* NAVBAR */
@@ -786,32 +793,89 @@ font-size:20px;
 
 }
 
+.mobile-menu{
 
+display:block;
+background:none;
+border:0;
+font-size:25px;
+color:#0878c9;
+cursor:pointer;
+
+}
+@media(max-width:768px){
 
 nav{
 
-display:none;
-position:absolute;
-top:75px;
-right:15px;
-width:220px;
+display:flex;
+flex-direction:column;
+
+position:fixed;
+top:0;
+right:-280px;
+
+width:270px;
+height:100vh;
+
 background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 15px 40px #0003;
+
+padding:100px 30px 30px;
+
+border-radius:30px 0 0 30px;
+
+box-shadow:-10px 0 40px rgba(0,0,0,.20);
+
+transition:.4s ease;
+
+z-index:2000;
 
 }
 
+
+nav.active{
+
+right:0;
+
+}
 
 
 nav a{
 
-display:block;
-margin:15px 0;
+font-size:16px;
+
+padding:15px 10px;
+
+margin:5px 0;
+
+border-radius:12px;
+
+color:#333;
+
+transition:.3s;
 
 }
 
 
+nav a:hover{
+
+background:#0878c9;
+
+color:white;
+
+transform:translateX(8px);
+
+}
+
+
+.mobile-menu{
+
+display:block;
+
+z-index:3000;
+
+}
+
+}
 
 
 
